@@ -5,14 +5,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-hr{
-  border-color: white;
-  width: 30%;
-  text-align: left;
-}
+img{width: 100%;}
 
 .debug{
-  border: 1px solid black;
+  border: 1px solid #95A0A2;
 }
 
 .conteiner{
@@ -21,9 +17,14 @@ hr{
 }
 
 header{
-  height: 75px;
+  height: 80px;
   width: 100%;
+  background-color: #FFFFFF}
+
+header a{
+  color: #707070;
 }
+
 
 header .logo{
   display: flex;
@@ -33,6 +34,9 @@ header .logo{
   margin-left: 5px;
 }
 
+header .img-lgo{
+padding-top: 7px;
+}
 
 header .link-left{
   display: flex;
@@ -49,60 +53,105 @@ margin: 0 5px;
   list-style: none;
 }
 
+header .inizia{ 
+  background-color: #0161FF;
+  color: #D6E7FF;
+}
+
 /* FINE HEADER  */
 
 .jumbotron{
   height: 500px;
   width: 100%;
   background-color: #B4D0E7;
+  position: relative;
   
 }
 
 .jumbotron .title-conteiner{
   width: 80%;
   margin: 20px auto;
+  margin-bottom: 40px;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .jumbotron .conteiner-jumbo{
-  margin: 0 auto;
+  margin: auto;
   width: 80%;
-  height: 385px;
-  display: flex;
+  display: flex; 
+  justify-content: space-between;
+  position: absolute;
+  left: 10%;
+  top: 35%;
 }
-
-
+ 
 .conteiner-jumbo .left-bo{
-  width: 40%;
-  height: 100%;
-  background-color: red;
+  width: 30%;
+  padding: 0px 15px 0px 15px ;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
+
+.conteiner-jumbo .arrow{
+  display: block;
+  margin-top: 25px;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.left-bo .try{
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  margin-top: 25px;
+  padding: 13px 15px;
+  background-color: #0161FE;
+  color: #DFEDFF;
+}
+
+
+
 
 .conteiner-jumbo .right-bo{
   width: 60%;
-  height: 440px;
-  max-height: 450px;
-  background-color: aqua;
-
+  align-self: flex-end;
 }
 
 /* FINE JUMBOTRON  */
 
 .column{
   width: 70%;
-  margin: 100px auto;
-  height: 700px;
-
+  margin: 150px auto;
+  height: 1200px;
 
 }
 
 .column .buisness{
-  font-size: 1.3rem;
-  margin-bottom: 30px;
+  font-size: 2rem;
+  padding: 20px 0px;
 }
 
 .column .button{
-  margin-bottom: 30px;
+  padding: 20px 0px;
+  margin-bottom: 10px;
+display: flex;
+}
+
+.button .bottone{
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  border: 4px solid #0161FE;
+  
+}
+
+.button-choice{
+  color: #C1C2C2;
+  font-size: 0.9rem;
 }
 
 .column .choice{
@@ -112,15 +161,140 @@ margin: 0 5px;
 
 .column .you{
   width: calc(100% / 3 - 5%);
-  height: 450px;
-  background-color: aqua;
 }
 
-.column .shop{
-  margin-top: 20px;
+.you .icon{
+  height: 40px;
   width: 100%;
-  margin: auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2rem;
 }
+
+.choice .conteiner-list{
+  margin: 0 auto;
+  width: 90%;
+  height: 90%;
+}
+
+.conteiner-list .titolo{
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.conteiner-list .soldi{
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.conteiner-list .mese{
+  color: #8C8B8C;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.first-list li i{
+  margin: 0px 5px 0px 0px;
+  color: #000000;
+}
+
+
+.first-list li{
+  margin: 10px 0px 10px 5px;
+  color: #4D5666;
+  list-style: none;
+
+}
+
+
+.conteiner-list .versione-prova{
+  display: block;
+  margin: 20px 0px;
+  padding: 12px;
+  background-color: #0062FF;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+}
+
+.conteiner-list .opp{
+  color: #8C8B8C;
+  font-size: 0.8rem;
+  
+}
+.conteiner-list  .buy{
+  color: #4040F2;
+  margin: 10px 2px;
+}
+
+.line{
+  margin: 20px 0px;
+  height: 10px;
+  width: 20%;
+  border-bottom: 1px solid #DCDBDD;
+
+}
+
+.bottom li i{
+  color: #0D63FE;
+}
+
+
+.column .shop{
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.squad{
+  width: 100%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.5rem;
+}
+
+.shop-conteiner{
+  display: flex;
+}
+
+.shop-left{
+  width: 75%;
+  margin-left: 15px;
+}
+
+.shop-title{
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.shop-subtitle{
+  font-size: 1.1rem;
+  color: #1E2228;
+  margin-bottom: 25px;
+  
+}
+
+.shop-p{
+  color: #95A0A2;
+  font-size: 0.9rem;
+}
+
+.shop-right{
+  width: 25%;
+  text-align: center; 
+}
+
+.ufficio-vendite{
+  display: block;
+  text-decoration: none;
+  margin-top: 30px;
+  padding: 16px;
+  background-color: #0D63FE;
+  color: #FFFFFF;
+}
+
 
 /* FINE SEZIONE  COLONNE  */
 
@@ -164,12 +338,12 @@ margin: 0 5px;
 
 /* FINE OPERAZIONI  */
 
-.team{
+.equip{
   margin-top: 50px;
   margin-bottom: 40px;
 }
 
-.team .title-desc{
+.equip .title-desc{
   width: 50%;
   font-size: 1.1rem;
 }
