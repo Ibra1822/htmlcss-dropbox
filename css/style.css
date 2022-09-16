@@ -299,23 +299,44 @@ display: flex;
 /* FINE SEZIONE  COLONNE  */
 
 .partner{
-  height: 400px;
   display: flex;
   margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .partner .foto{
   width: 60%;
-  height: 100%;
-  background-color: aqua;
+}
+
+.foto .partner-image{
+ width: 100%;
 }
 
 .partner .text{
   width: 40%;
   height: 100%;
-  background-color: red;
+  padding: 50px;
+}
+.text .title-partnership{
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.text .text-partnership{
+  font-size: 1.1rem;
+  color: #838383;
+  margin-bottom: 30px;
+}
+
+.text .link-partner{
+  padding: 16px;
+  color: #C1C2C4;
+  text-decoration: none;
+  border: 1px solid #403F3F;
 
 }
+
 
 /* FINE SEZIONE PARTNER */
 
