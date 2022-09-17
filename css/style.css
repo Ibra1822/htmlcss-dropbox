@@ -5,7 +5,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img{width: 100%;}
+html{
+  scroll-behavior: smooth;
+}
+
+ img{width: 100%;}
 
 .debug{
   border: 1px solid #95A0A2;
@@ -19,7 +23,13 @@ img{width: 100%;}
 header{
   height: 80px;
   width: 100%;
-  background-color: #FFFFFF}
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  z-index: 999;
+}
+  
 
 header a{
   color: #707070;
@@ -42,10 +52,28 @@ header .link-left{
   display: flex;
 
 }
- ul a{
+
+nav img{
+  padding-top: 25px;
+}
+
+ ul .menu{
   text-decoration: none;
-padding: 10px;
-margin: 0 5px;
+  height: 100%;
+  padding: 30px 10px;
+  margin: 0 5px;
+}
+
+ .menu:active{
+  background-color: lightgray;
+}
+
+.logo .menu{
+  border: 2px solid transparent;
+}
+
+.menu:hover{
+  border-bottom: 2px solid black;
 }
 
 .link-left ul, .link-right ul{
@@ -54,13 +82,27 @@ margin: 0 5px;
 }
 
 header .inizia{ 
+  margin-right: 10px;
+  padding: 9px 17px;
   background-color: #0161FF;
   color: #D6E7FF;
+  align-self: center;
+  text-decoration: none;
 }
+
+.inizia:hover{
+  background-color: rgb(27, 108, 248);
+}
+
+.inizia:active{
+  background-color: rgb(0, 28, 94);
+}
+
 
 /* FINE HEADER  */
 
 .jumbotron{
+  margin-top: 80px;
   height: 500px;
   width: 100%;
   background-color: #B4D0E7;
@@ -112,18 +154,30 @@ header .inizia{
 
 
 
+.try:hover{
+  background-color: rgb(27, 108, 248);
+}
+
+.try:active{background-color: rgb(0, 17, 92);}
 
 .conteiner-jumbo .right-bo{
   width: 60%;
   align-self: flex-end;
 }
 
+#uno::before{
+  content: '';
+  display: block;
+  height: 50px;
+  margin: 50px 00;
+}
+
+
 /* FINE JUMBOTRON  */
 
 .column{
   width: 70%;
   margin: 150px auto;
-  height: 1200px;
 
 }
 
@@ -135,7 +189,7 @@ header .inizia{
 .column .button{
   padding: 20px 0px;
   margin-bottom: 10px;
-display: flex;
+  display: flex;
 }
 
 .button .bottone{
@@ -164,7 +218,6 @@ display: flex;
 }
 
 .you .icon{
-  height: 40px;
   width: 100%;
   text-align: center;
   line-height: 40px;
@@ -174,7 +227,6 @@ display: flex;
 .choice .conteiner-list{
   margin: 0 auto;
   width: 90%;
-  height: 90%;
 }
 
 .conteiner-list .titolo{
@@ -218,6 +270,12 @@ display: flex;
   text-decoration: none;
 }
 
+.versione-prova:hover{
+  background-color: rgb(27, 108, 248);
+}
+
+.versione-prova:active{background-color: rgb(0, 17, 92);}
+
 .conteiner-list .opp{
   color: #8C8B8C;
   font-size: 0.8rem;
@@ -244,13 +302,12 @@ display: flex;
 .column .shop{
   margin-top: 50px;
   width: 100%;
-  height: 300px;
 }
 
 .squad{
   width: 100%;
   text-align: center;
-  line-height: 80px;
+  line-height: 60px;
   font-size: 1.5rem;
 }
 
@@ -279,6 +336,7 @@ display: flex;
 .shop-p{
   color: #95A0A2;
   font-size: 0.9rem;
+  padding-bottom: 30px;
 }
 
 .shop-right{
@@ -290,10 +348,17 @@ display: flex;
   display: block;
   text-decoration: none;
   margin-top: 30px;
+  margin-right: 15px;
   padding: 16px;
   background-color: #0D63FE;
   color: #FFFFFF;
 }
+
+.ufficio-vendite:hover{
+  background-color: rgb(27, 108, 248);
+}
+
+.ufficio-vendite:active{background-color:rgb(0, 17, 92);}
 
 
 /* FINE SEZIONE  COLONNE  */
@@ -337,19 +402,43 @@ display: flex;
 
 }
 
+.link-partner:active{
+  background-color: darkgray;
+}
+
+.link-partner:hover{color: lightgray ;}
 
 /* FINE SEZIONE PARTNER */
 
+title-op{
+  margin: 20px 0px;
+}
+.title-op h3{
+  font-size: 2rem;
+  
+}
+
 .operazione{
   margin-top: 50px;
-  height: 640px;
 }
 
 .operazione .ope{
-  width: calc(100% / 3 - 5%);
-  height: 300px;
-  margin-bottom: 40px;
-  background-color: aqua;
+  width: calc(100% / 3 - 3%);
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.ope .ope-subtitle{
+  font-size: 1.5rem;
+  margin: 5px 5px;
+  padding: 5px 10px;
+
+}
+
+.ope .ope-p{
+  font-size: 1.1rem;
+  padding: 10px;
+  color: #242A34;
 }
 
 .op-head{
@@ -361,12 +450,17 @@ display: flex;
 
 .equip{
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 200px;
 }
 
 .equip .title-desc{
-  width: 50%;
-  font-size: 1.1rem;
+  width: 70%;
+}
+
+.title-desc .number{
+  margin-bottom: 60px;
+  font-size: 2rem;
+
 }
 
 /* FINE SOTTOTITOLO */
@@ -378,34 +472,77 @@ display: flex;
 }
 
 .company{
+  height: 400px;
   width: 100%;
-  height: 350px;
   display: flex;
 }
 
 .company-left{
   width: 30%;
-  height: 350px;
+  height: 100%;
 }
 .company-center{
   width: 40%;
-  height: 350px;
+  background-color: #F5F5F5;
 }
 
 .company-right{
   width: 30%;
-  height: 350px;
 }
 .society{
-  height: 175px;
-  width: 50%;
-  float: left;
+   width: 50%;
+   height: 200px;
+   float: left;
+   display: flex;
+   align-items: center;
 }
-.ditta{
+
+
+
+.one-1{fill: white; background-color: #A2D39B; width: 100%; height: 100%; padding: 30px;}
+
+.two-2{fill: white; background-color: #62092B; height:100%; width: 100%; padding: 30px;}
+
+.three-3{fill:white; background-color: #0093CE; width: 100%; height: 100% ; padding-top: 75px;}
+
+.four-4{fill: #FFFFFF; background-color: #FF1B1C; height:100%; width: 100%; padding: 30px;}
+
+.five-5{fill: white; background-color:#D50020; width: 100%; height: 100%; padding: 30px;}
+
+.six-6{fill: white; background-color:#B4D0E7; width: 100%; height: 100%; padding: 30px;}
+
+.seven-7{fill: white; background-color:#0D2481; width: 100%; height: 100%; padding: 30px;}
+
+.eith-8{fill: white; background-color:#FFD92F; width: 100%; height: 100%; padding: 30px;}
+
+
+.company-center  img{
   width: 50%;
-  height: 175px;
-  float: left;
+  padding: 20px;
+  
 }
+
+.company-center::-webkit-scrollbar {
+ width: 530px;
+ height: 530px;
+ overflow-y: hidden; 
+
+}
+
+.company-center  .line{
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.company-center  p{
+  margin: 20px 20px;
+  font-size: 0.9rem;
+  padding: 0px 30px 0px 0px;
+  color: #9CA09D;
+
+}
+
+
 
 /* FINE COMPANY  */
 
@@ -414,25 +551,62 @@ display: flex;
   height: 200px;
   width: 100%;
   background-color: #B4D0E7;
+  display: flex;
+  align-items: center;
 
 }
 .content-prova{
-  margin: 20px auto;
+  margin: auto;
   width: 70%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-
 }
 
-.domande{;
+.content-prova h3{
+  font-size: 2rem;
+  padding: 0px 0px;
+  color: #62092B;
+}
+
+.content-prova a{
+  padding: 16px;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  color: #000;
+}
+
+.content-prova a:hover{
+  color: lightgray;
+}
+
+.content-prova a:active{
+  background-color: darkgray;
+}
+
+
+/* FINE SCRITTA PUBBLICITA'  */
+
+.domande{
   height: 500px;
 }
 
 .frequenti{
-  margin-top: 50px;
+  display: block;
+  margin: 30px 50px;
+  font-size: 2rem;
+   padding: 40px;
+   border-bottom: 1px solid lightgray;
   
 }
+
+.title-effect{
+  margin: 30px auto;
+  margin-left: 50px;
+  padding: 30px;
+  border-bottom: 1px solid lightgray;
+  
+}
+
 
 /* FINE DOMANDE E MAIN  */
 
@@ -458,7 +632,27 @@ display: flex;
 .conteiners-foot{
   margin-top: 20px;
   width: calc(100% / 5 - 5%);
-  border: 1px solid white;
+}
+
+.conteiners-foot p{
+  color: White;
+  font-size: 0.9rem;
+  margin: 20px 5px 0px 0px;
+}
+
+.conteiners-foot h3{
+  color: White;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.conteiners-foot a{
+  text-decoration: none;
+}
+
+.conteiners-foot a:hover{
+  text-decoration: underline;
+  color: white;
 }
 
 .lingua{
@@ -471,4 +665,9 @@ display: flex;
 hr{
   width: 20%;
   border-color: whitesmoke;
+}
+
+.ita  {
+  margin-top: 20px;
+  color: lightgrey;
 }
