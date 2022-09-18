@@ -465,81 +465,90 @@ title-op{
 
 /* FINE SOTTOTITOLO */
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.company{
-  height: 400px;
+.compa{
+  margin-top: 20px;
   width: 100%;
+  margin: 20px auto;
   display: flex;
+
 }
 
-.company-left{
+.left{
   width: 30%;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-.company-center{
+ 
+.square { 
+  position: relative;
+  width: 50%;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  padding-top: 20%;
+  padding: 10px;
+} 
+
+
+.center{
   width: 40%;
   background-color: #F5F5F5;
+  margin-bottom: 0;
 }
-
-.company-right{
+.right{
   width: 30%;
-}
-.society{
-   width: 50%;
-   height: 200px;
-   float: left;
-   display: flex;
-   align-items: center;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
+.one-1{fill: white; background-color: #A2D39B;}
 
-.one-1{fill: white; background-color: #A2D39B; width: 100%; height: 100%; padding: 30px;}
-
-.two-2{fill: white; background-color: #62092B; height:100%; width: 100%; padding: 30px;}
+.two-2{fill: white; background-color: #62092B;}
 
 .three-3{fill:white; background-color: #0093CE; width: 100%; height: 100% ; padding-top: 75px;}
 
-.four-4{fill: #FFFFFF; background-color: #FF1B1C; height:100%; width: 100%; padding: 30px;}
+.four-4{fill: white; background-color: #FF1B1C;}
 
-.five-5{fill: white; background-color:#D50020; width: 100%; height: 100%; padding: 30px;}
+.five-5{fill: white; background-color:#D50020;}
 
-.six-6{fill: white; background-color:#B4D0E7; width: 100%; height: 100%; padding: 30px;}
+.six-6{fill: white; background-color:#B4D0E7;}
 
-.seven-7{fill: white; background-color:#0D2481; width: 100%; height: 100%; padding: 30px;}
+.seven-7{fill: white; background-color:  #0D2481;}
 
-.eith-8{fill: white; background-color:#FFD92F; width: 100%; height: 100%; padding: 30px;}
+.eith-8{fill: white; background-color:#FFD92F;}
 
-
-.company-center  img{
+.center img{
+  margin-top: 20px;
   width: 50%;
-  padding: 20px;
-  
+  padding: 10px 15px;
 }
 
-.company-center::-webkit-scrollbar {
- width: 530px;
- height: 530px;
- overflow-y: hidden; 
-
+.center .line{
+  height: 5px;
+  width: 30%;
+  margin-left: 15px;
+  border-bottom: 1px solid lightgray;
 }
 
-.company-center  .line{
-  margin-left: 20px;
-  margin-bottom: 40px;
-}
-
-.company-center  p{
-  margin: 20px 20px;
+.center p{
   font-size: 0.9rem;
-  padding: 0px 30px 0px 0px;
-  color: #9CA09D;
-
+  margin-left: 15px;
+  margin-right: 20px;
+  color: grey;
+  margin-bottom: 15px;
 }
 
 
@@ -547,8 +556,8 @@ title-op{
 /* FINE COMPANY  */
 
 .prova{
-  margin-top: 0;
-  height: 200px;
+  margin-top: -20px;
+  height: 250px;
   width: 100%;
   background-color: #B4D0E7;
   display: flex;
@@ -598,14 +607,22 @@ title-op{
    border-bottom: 1px solid lightgray;
   
 }
-
-.title-effect{
-  margin: 30px auto;
+.conteiner-effect{
+  margin: auto;
   margin-left: 50px;
   padding: 30px;
-  border-bottom: 1px solid lightgray;
-  
 }
+
+.title-effect{
+  padding: 30px;
+  border-bottom: 1px solid lightgray;
+}
+.magic{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
 
 
 /* FINE DOMANDE E MAIN  */
