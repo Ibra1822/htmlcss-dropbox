@@ -88,6 +88,19 @@ header .inizia{
   color: #D6E7FF;
   align-self: center;
   text-decoration: none;
+  height: 100%;
+}
+
+.con-inizia{
+  height: 82px;
+  line-height: 80px;
+  border: 2px solid transparent;
+
+}
+
+.con-inizia:hover{
+  border-bottom: 2px solid black;
+
 }
 
 .inizia:hover{
@@ -99,8 +112,6 @@ header .inizia{
 .inizia:active{
   background-color: rgb(0, 28, 94);
 }
-
-
 
 
 /* FINE HEADER  */
@@ -216,6 +227,16 @@ header .inizia{
   display: flex;
   justify-content: space-between;
 }
+
+.choice-two{
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border: 4px solid lightgray;
+}
+
 
 .column .you{
   width: calc(100% / 3 - 5%);
@@ -541,24 +562,25 @@ title-op{
 }
 
 
-.three-3{fill:white; background-color: #0093CE; width: 100%; height: 100% ; padding-top: 75px;border: 10px solid transparent;}
+.left .three-3{fill:white; background-color: #FF6C31; width: 100%; height: 100% ; padding-top: 70px;border: 10px solid transparent;
+filter: invert(1);}
 
 .three-3:active{
-  border: 10px solid rgba(255, 255, 255, 0.5);
+  border: 10px solid rgba(00,00,00, 0.5);
 }
 
 
-.four-4{fill: white; background-color: #FF1B1C;border: 10px solid transparent;}
+.four-4{fill: white; background-color: #01E4E3;border: 10px solid transparent; filter: invert(1);}
 
 .four-4:active{
-  border: 10px solid rgba(255, 255, 255, 0.5);
+  border: 10px solid rgba(00, 00, 00, 0.5);
 }
 
 
-.five-5{fill: white; background-color:#D50020;border: 10px solid transparent;}
+.five-5{fill: white; background-color:#2CFFDF;border: 10px solid transparent; filter: invert(1);}
 
 .five-5:active{
-  border: 10px solid rgba(255, 255, 255, 0.5);
+  border: 10px solid rgba(00, 00, 00, 0.5);
 }
 
 
@@ -699,15 +721,15 @@ title-op{
 }
 
 .effect-one:hover{
-  color: black; padding: 10px;
+  color: darkgray; padding: 10px;
 }
 
 .effect-two:hover{
-  color: black; padding: 10px;
+  color: darkgray; padding: 10px;
 }
 
 .effect-three:hover{
-  color: black; padding: 10px;
+  color: darkgray; padding: 10px;
 }
 
 /* FINE DOMANDE E MAIN  */
