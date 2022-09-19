@@ -66,6 +66,7 @@ nav img{
 
  .menu:active{
   background-color: lightgray;
+  
 }
 
 .logo .menu{
@@ -74,6 +75,7 @@ nav img{
 
 .menu:hover{
   border-bottom: 2px solid black;
+  border-radius: 3%;
 }
 
 .link-left ul, .link-right ul{
@@ -95,6 +97,7 @@ header .inizia{
   height: 82px;
   line-height: 80px;
   border: 2px solid transparent;
+  border-radius: 3%;
 
 }
 
@@ -128,10 +131,10 @@ header .inizia{
 .jumbotron .title-conteiner{
   width: 80%;
   margin: 20px auto;
-  margin-bottom: 40px;
   text-align: center;
   font-size: 1.5rem;
 }
+
 
 .jumbotron .conteiner-jumbo{
   margin: auto;
@@ -146,8 +149,18 @@ header .inizia{
 .conteiner-jumbo .left-bo{
   width: 30%;
   padding: 0px 15px 0px 15px ;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 15px;
+}
+
+.left-bo .text-bo{
+  color: #26200D;
+}
+
+.left-bo .annulla{
+  margin-left: 8px;
+  margin-top: 15px;
+  color: #26200D;
 }
 
 .conteiner-jumbo .arrow{
@@ -660,7 +673,7 @@ filter: invert(1);}
   padding: 16px;
   background-color: #FFFFFF;
   text-decoration: none;
-  color: #000;
+  color: #C1C2C4;
 }
 
 .content-prova .inizia-prova:hover{
@@ -721,15 +734,15 @@ filter: invert(1);}
 }
 
 .effect-one:hover{
-  color: darkgray; padding: 10px;
+  color: #212121; padding: 10px;
 }
 
 .effect-two:hover{
-  color: darkgray; padding: 10px;
+  color: #212121; padding: 10px;
 }
 
 .effect-three:hover{
-  color: darkgray; padding: 10px;
+  color: #212121; padding: 10px;
 }
 
 /* FINE DOMANDE E MAIN  */
@@ -748,10 +761,6 @@ filter: invert(1);}
   justify-content:space-between;
 }
 
-.conteiners-foot>:first-child{
-  margin-bottom: 10px;
-  
-}
 
 .conteiners-foot{
   margin-top: 20px;
