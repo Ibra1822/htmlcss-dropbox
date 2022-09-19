@@ -92,11 +92,15 @@ header .inizia{
 
 .inizia:hover{
   background-color: rgb(27, 108, 248);
+
+
 }
 
 .inizia:active{
   background-color: rgb(0, 28, 94);
 }
+
+
 
 
 /* FINE HEADER  */
@@ -503,7 +507,6 @@ title-op{
 
 .content-one {
   position: absolute;
-  width: 100%;
   height: 100%;
   font-size: 0.9rem;
   padding-top: 20%;
@@ -527,6 +530,7 @@ title-op{
 
 .one-1{fill: white; background-color: #A2D39B;}
 
+
 .two-2{fill: white; background-color: #62092B;}
 
 .three-3{fill:white; background-color: #0093CE; width: 100%; height: 100% ; padding-top: 75px;}
@@ -549,20 +553,25 @@ title-op{
 
 .center .line{
   height: 5px;
-  width: 30%;
+  width: 20%;
   margin-left: 15px;
   border-bottom: 1px solid lightgray;
 }
 
 .center .par-centro{
+  color: darkgrey;
   margin-left: 20px;
-  width: 35%;
-  height: 15%;
+  width: 45%;
+  height: 17%;
   overflow: auto;
-  max-height: 15%;
+  max-height: 18%;
+  margin-bottom: 2px;
 }
 
-
+.par-centro .name{
+  display: block;
+  padding: 5px 0; 
+}
 
 /* FINE COMPANY  */
 
@@ -588,18 +597,18 @@ title-op{
   color: #62092B;
 }
 
-.content-prova a{
+.content-prova .inizia-prova{
   padding: 16px;
   background-color: #FFFFFF;
   text-decoration: none;
   color: #000;
 }
 
-.content-prova a:hover{
+.content-prova .inizia-prova:hover{
   color: lightgray;
 }
 
-.content-prova a:active{
+.content-prova .inizia-prova:active{
   background-color: darkgray;
 }
 
@@ -612,29 +621,57 @@ title-op{
 
 .frequenti{
   display: block;
-  margin: 30px 50px;
+  margin: 30px 10px;
   font-size: 2rem;
    padding: 40px;
-   border-bottom: 1px solid lightgray;
   
 }
 .conteiner-effect{
   margin: auto;
   margin-left: 50px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .title-effect{
-  padding: 30px;
-  border-bottom: 1px solid lightgray;
+  padding: 20px;
 }
-.magic{
+.effect-one,
+.effect-two,
+.effect-three{
+  border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: space-between;
-  color: black;
+  color: white;
 }
 
+.conteiner-effect i{
+  color: #000;
+}
 
+.effect-one:hover i{
+  transform: rotate(180deg);
+  padding: 10px 0px;
+}
+.effect-two:hover i{
+  transform: rotate(180deg);
+  padding: 10px 0px;
+}
+.effect-three:hover i{
+  transform: rotate(180deg);
+  padding: 10px 0px;
+}
+
+.effect-one:hover{
+  color: black; padding: 10px;
+}
+
+.effect-two:hover{
+  color: black; padding: 10px;
+}
+
+.effect-three:hover{
+  color: black; padding: 10px;
+}
 
 /* FINE DOMANDE E MAIN  */
 
