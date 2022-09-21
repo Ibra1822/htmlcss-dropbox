@@ -246,6 +246,7 @@ header .inizia{
   text-align: center;
   line-height: 40px;
   font-size: 1.2rem;
+  border-bottom: 1px solid #95A0A2;
 }
 
 .choice .conteiner-list{
@@ -328,6 +329,7 @@ header .inizia{
   text-align: center;
   line-height: 60px;
   font-size: 1.5rem;
+  border-bottom: 1px solid #95A0A2;
 }
 
 .shop-conteiner{
@@ -681,44 +683,31 @@ filter: invert(1);}
   padding: 20px;
 }
 
-.effect-one,
-.effect-two,
-.effect-three{
+
+.effect{
+  padding: 2px;
   border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: space-between;
-  color: white;
+  justify-content: flex-end;
 }
+
+.magic{display: none;}
+
 
 .conteiner-effect i{
   color: #000000;
+  display: block;
+  font-size: 15px;
 }
 
-  .effect-one:hover i{
+  .effect:hover .su{
     transition: transform 0.5s;
     transform: rotate(180deg);
 }
 
-.effect-two:hover i{
-  transition: transform 0.5s;
-  transform: rotate(180deg);
-}
-
-
-.effect-three:hover i{
-  transition: transform 0.5s;
-  transform: rotate(180deg);
-}
-.effect-one:hover{
-  color: #212121; padding: 8px;
-}
-
-.effect-two:hover{
-  color: #212121; padding: 8px;
-}
-
-.effect-three:hover{
-  color: #212121; padding: 8px;
+.effect:hover .magic{
+  display: block;
 }
 
 /* FINE DOMANDE E MAIN  */
